@@ -1,10 +1,5 @@
-#!/bin/bash
-
-echo "Running health check..."
-
-# Simule un traitement long
-sleep 10
-
-# Simule un health check OK
-echo "Service is healthy!"
-exit 0
+@echo off
+echo Running health check...
+timeout /t 10 >nul
+echo Service is healthy!
+exit /b 0
